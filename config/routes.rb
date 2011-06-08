@@ -1,15 +1,5 @@
 Bsrp::Application.routes.draw do
 
-  get "home/faq"
-
-  get "home/last_changes"
-
-  get "home/organizations"
-
-  get "home/admins"
-
-  get "home/contact"
-
   # The priority is based upon order of creation:
   # first created -> highest priority.
 
@@ -23,6 +13,13 @@ Bsrp::Application.routes.draw do
   # Newsy
   match 'news/:cached_slug' => 'news#show', :as => :show
 
+  # Podstrony
+  match 'administracja' => 'home#admins', :as => :admins
+  match 'organizacje' => 'home#organizations', :as => :organizations
+  match 'ostatnie-zmiany' => 'home#last_changes', :as => :last_changes
+  match 'kontakt' => 'home#contact', :as => :contact
+  
+  
   # Sample of named route:
   #   match 'products/:id/purchase' => 'catalog#purchase', :as => :purchase
   # This route can be invoked with purchase_url(:id => product.id)

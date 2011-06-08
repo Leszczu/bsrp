@@ -1,12 +1,11 @@
 %p.header Bayside Role Play
 %ul
   %li= link_to 'Strona Główna', root_path
-  %li= link_to 'Forum', root_path
-  %li= link_to 'FAQ', root_path
-  %li= link_to 'Ostatnie zmiany', root_path
-  %li= link_to 'Organizacje', root_path
-  %li= link_to 'Administracja', root_path
-  %li= link_to 'Kontakt', root_path
+  %li= link_to 'Forum', 'forum'
+  %li= link_to 'Ostatnie zmiany', last_changes_path
+  %li= link_to 'Organizacje', organizations_path
+  %li= link_to 'Administracja', admins_path
+  %li= link_to 'Kontakt', contact_path
 %p.header Panel Gracza
 %ul
   %li= link_to 'Zaloguj się', root_path
