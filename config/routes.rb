@@ -1,5 +1,15 @@
 Bsrp::Application.routes.draw do
 
+  get "home/faq"
+
+  get "home/last_changes"
+
+  get "home/organizations"
+
+  get "home/admins"
+
+  get "home/contact"
+
   # The priority is based upon order of creation:
   # first created -> highest priority.
 
